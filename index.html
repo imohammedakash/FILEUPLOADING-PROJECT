@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8e8487a383.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>File Uploading Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="upload-box">
+            <img src="upload.png" alt="">
+            <!-- <i class="fa-sharp fa-solid fa-cloud-arrow-up fa-6x"></i> -->
+            <p>Browse files</p>
+            <input type="file" class="File-input" hidden />
+        </div>
+        <div class="content">
+            <div class="img-property">
+                <div class="width-div property-div">
+                    <label for="width">width</label>
+                    <input type="number" class="column" id="width">
+                </div>
+                <div class="height-div property-div">
+                    <label for="height">Height</label>
+                    <input type="number" class="column" id="height">
+                </div>
+            </div>
+            <div class="check-box-div">
+                <div class="checkboxes Ratio">
+                    <input type="checkbox" name="" class="checkbox" id="lock-aspect-ratio" checked>
+                    <label for="lock-aspect-ratio">Lock Aspect Ratio</label>
+                </div>
+                <div class="checkboxes">
+                    <input type="checkbox" name="" class="checkbox" id="reduce-quality">
+                    <label for="reduce-quality">Reduce Quality</label>
+                </div>
+            </div>
+            <div class="btn">
+                <button id="download-btn">Download</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
